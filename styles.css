@@ -182,10 +182,37 @@ p {
   transition: border-color var(--transition-micro), transform var(--transition-micro), box-shadow var(--transition-micro);
 }
 
+/* Announcement Banner */
+.announcement-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 38px;
+  background: rgba(15, 30, 38, 0.95);
+  border-bottom: 1px solid rgba(255, 200, 1, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  z-index: 101;
+  color: var(--color-mystic-mint);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.timer-highlight {
+  color: var(--color-forsythia);
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 200, 1, 0.3);
+}
+
 /* Layout wrappers */
 header {
   position: fixed;
-  top: 0;
+  top: 38px; /* Offset for banner */
   left: 0;
   right: 0;
   z-index: 100;
@@ -259,7 +286,7 @@ header {
 }
 
 main {
-  margin-top: 5rem;
+  margin-top: 7.5rem; /* Adjusted for top banner + header */
   flex: 1;
 }
 

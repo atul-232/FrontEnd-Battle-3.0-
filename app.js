@@ -277,6 +277,30 @@ function initControls() {
   }
 }
 
+// --- TIMED URGENCY COUNTDOWN TIMER ---
+function initCountdownTimer() {
+  const timerEl = document.getElementById('countdown-timer');
+  if (!timerEl) return;
+
+  // Set a 4-hour countdown timer from session start
+  let totalSeconds = 4 * 60 * 60 + 35 * 60 + 12;
+
+  const interval = setInterval(() => {
+    if (totalSeconds <= 0) {
+      clearInterval(interval);
+      timerEl.textContent = "00:00:00";
+      return;
+    }
+
+    totalSeconds--;
+    const hrs = Math.floor(totalSeconds / 3600);
+    const mins = Math.floor((totalSeconds % 3600) / 60);
+    const secs = totalSeconds % 60;
+
+    timerEl.textContent = `${String(hrs).padStart(2, '0')}:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+  }, 1000);
+}
+
 // --- ENTRANCE ORCHESTRATION TIMELINE (<500ms) ---
 window.addEventListener('DOMContentLoaded', () => {
   const loader = document.getElementById('loader');
@@ -286,6 +310,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initBentoAccordion();
   initControls();
   initResizeObserver();
+  initCountdownTimer();
 
   // Fade out loader after initialization to prevent loading blockages
   setTimeout(() => {
