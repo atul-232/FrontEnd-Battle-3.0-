@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Optimization & Metadata -->
+  <title>AetherFlow - Next-Gen AI-Driven Data Automation Platform</title>
+  <meta name="description" content="Integrate, map, and analyze your unstructured data pipelines autonomously with AetherFlow. Experience 10x faster Time-to-Interactive, native CSS choreographies, and isolated reactive calculations.">
+  <meta name="keywords" content="AI data automation, data pipeline, bento grid, reactive pricing matrix, AetherFlow, real-time data integration">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aetherflow.ai/">
+  <meta property="og:title" content="AetherFlow - Next-Gen AI Data Automation">
+  <meta property="og:description" content="Integrate, map, and analyze your data pipelines autonomously. Performance-isolated calculations and state-persistent bento layouts.">
+  <meta property="og:image" content="assets/cube-16-solid.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="AetherFlow - Next-Gen AI Data Automation">
+  <meta property="twitter:description" content="Integrate, map, and analyze your data pipelines autonomously. Performance-isolated calculations and state-persistent bento layouts.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  
+  <!-- Futuristic Grid Mesh -->
+  <div class="grid-mesh" aria-hidden="true"></div>
+
+  <!-- Entry Performance Initial Loader -->
+  <div id="loader" class="loader-overlay" aria-hidden="true">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <nav class="nav-container">
+      <a href="#" class="logo" id="logo-link">
+        <!-- SVG chart-pie.svg for Logo -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+        </svg>
+        <span>AetherFlow</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+      <a href="#pricing" class="btn btn-secondary btn-sm" id="nav-cta">Get Started</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content animate-fade-in">
+        <div class="hero-pill">
+          <span class="pulse-dot"></span>
+          <span>v2.0 Platform Launch</span>
+        </div>
+        <h1>Next-Gen AI Data Automation</h1>
+        <p>Integrate, sanitize, and coordinate complex multi-source data streams with zero manual scripts. Let AetherFlow's autonomous AI engines orchestrate your operational pipelines under sub-millisecond timelines.</p>
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary" id="hero-primary-cta">Start Free Trial</a>
+          <a href="#features" class="btn btn-secondary" id="hero-secondary-cta">Explore Features</a>
+        </div>
+      </div>
+      
+      <!-- Interactive dashboard visual -->
+      <div class="hero-visual animate-fade-in delay-100">
+        <div class="dashboard-mockup">
+          <div class="dashboard-header">
+            <div class="dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="font-mono" style="font-size: 0.75rem; color: var(--color-mystic-mint);">aetherflow-daemon.sh</div>
+            <!-- search.svg inside visual -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 16px; height: 16px; color: var(--color-mystic-mint);">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+          </div>
+          <div class="dashboard-grid">
+            <div class="sidebar-mock">
+              <div class="sidebar-line active"></div>
+              <div class="sidebar-line"></div>
+              <div class="sidebar-line"></div>
+              <div class="sidebar-line"></div>
+              <div class="sidebar-line" style="margin-top: auto; width: 50%;"></div>
+            </div>
+            <div class="content-mock">
+              <div class="status-mock">
+                <div class="status-indicator">
+                  <span class="pulse-dot"></span>
+                  <span class="font-mono" style="font-size: 0.8rem; font-weight: 500;">PIPELINES ACTIVE</span>
+                </div>
+                <div class="font-mono" style="font-size: 0.75rem; color: var(--color-forsythia);">99.98% Acc</div>
+              </div>
+              <div class="chart-mock">
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Bento-to-Accordion Section -->
+    <section id="features" class="animate-fade-in delay-200">
+      <div class="section-header">
+        <h2>Features Engineered for Scale</h2>
+        <p>Unify data streaming, modeling, mapping, and security under one context-locked orchestration wrapper.</p>
+      </div>
+      
+      <!-- Unified Bento-Accordion component with data-index mappings for context lock -->
+      <div class="bento-wrapper">
+        <div class="feature-showcase" id="bento-container">
+          
+          <!-- Card 1: span 2 cols on desktop -->
+          <div class="feature-card card-1" data-index="0" id="card-index-0">
+            <div class="card-title-area">
+              <div class="icon-wrapper">
+                <!-- arrow-path.svg -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+              </div>
+              <!-- chevron-down.svg -->
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div>
+              <h3>Real-Time Stream Integration</h3>
+              <div class="card-body">
+                <div class="card-body-content">
+                  <p>Ingest sub-second event logs, relational database transactions, and unstructured API payloads dynamically. AetherFlow automatically scales computing queues to prevent backpressure bottlenecks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: span 1 col on desktop -->
+          <div class="feature-card card-2" data-index="1" id="card-index-1">
+            <div class="card-title-area">
+              <div class="icon-wrapper">
+                <!-- arrow-trending-up.svg -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                </svg>
+              </div>
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div>
+              <h3>Predictive Analytics Engine</h3>
+              <div class="card-body">
+                <div class="card-body-content">
+                  <p>Uncover anomalies, forecast traffic spikes, and generate insights directly inline within your streams using optimized vector math.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: span 1 col on desktop -->
+          <div class="feature-card card-3" data-index="2" id="card-index-2">
+            <div class="card-title-area">
+              <div class="icon-wrapper">
+                <!-- cube-16-solid.svg (using solid cube representation) -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l9-5.25v-9zM11.25 22.18v-9l-9-5.25v9l9 5.25z" />
+                </svg>
+              </div>
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div>
+              <h3>Secure Decentralized Nodes</h3>
+              <div class="card-body">
+                <div class="card-body-content">
+                  <p>Orchestrate workloads across global edge nodes safely with hardware-level memory protection and zero shared-secret trusts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: span 2 cols on desktop -->
+          <div class="feature-card card-4" data-index="3" id="card-index-3">
+            <div class="card-title-area">
+              <div class="icon-wrapper">
+                <!-- cog-8-tooth.svg -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.43l-1.003.828c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.43l1.004-.827c.292-.24.437-.613.43-.991a6.936 6.936 0 010-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <svg class="accordion-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div>
+              <h3>Autonomous Data Mapping</h3>
+              <div class="card-body">
+                <div class="card-body-content">
+                  <p>Auto-generate database schemas and mapping structures using contextual semantic embeddings. Maps and relates disparate key-value layers without user-defined keys or structural schema definitions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Switcher Section -->
+    <section id="pricing" class="animate-fade-in delay-300">
+      <div class="section-header">
+        <h2>Matrix-Driven Pricing Plans</h2>
+        <p>Dynamic calculations across multiple currencies. Performance-isolated changes with zero global page reflows.</p>
+      </div>
+
+      <div class="pricing-controls">
+        <!-- Currency dropdown selector -->
+        <div class="dropdown-wrapper" id="currency-dropdown">
+          <div class="dropdown-trigger" role="button" aria-haspopup="listbox" aria-expanded="false" id="dropdown-trigger-btn">
+            <span id="selected-currency-label">USD ($)</span>
+            <!-- chevron-down.svg -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </div>
+          <ul class="dropdown-menu" role="listbox" id="dropdown-menu-list">
+            <li class="dropdown-item selected" data-value="USD" role="option" aria-selected="true">USD ($)</li>
+            <li class="dropdown-item" data-value="EUR" role="option" aria-selected="false">EUR (€)</li>
+            <li class="dropdown-item" data-value="INR" role="option" aria-selected="false">INR (₹)</li>
+          </ul>
+        </div>
+
+        <!-- Monthly/Annual Toggle -->
+        <div class="toggle-wrapper" id="billing-toggle-container">
+          <span class="toggle-slider"></span>
+          <button class="toggle-btn active" data-billing="monthly" id="toggle-monthly-btn">Monthly</button>
+          <button class="toggle-btn" data-billing="yearly" id="toggle-yearly-btn">Yearly (20% off)</button>
+        </div>
+      </div>
+
+      <!-- Pricing Tiers Grid -->
+      <div class="pricing-grid">
+        
+        <!-- Tier 1: Starter -->
+        <div class="pricing-card" id="pricing-starter">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <p class="pricing-desc">Perfect for small teams and developers prototyping pipelines.</p>
+            <div class="pricing-price">
+              <!-- Strictly isolated text nodes for prices -->
+              <span class="price-symbol" id="starter-symbol">$</span>
+              <span class="price-value" id="starter-value">19</span>
+              <span class="price-period" id="starter-period">/ mo</span>
+            </div>
+            <div class="price-subtext" id="starter-subtext"></div>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <!-- link.svg for feature bullet -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>5,000 data rows/mo</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>Basic data cleaning</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>Standard API access</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>24h support response</span>
+            </li>
+          </ul>
+          <button class="btn btn-secondary" id="starter-cta">Choose Starter</button>
+        </div>
+
+        <!-- Tier 2: Pro -->
+        <div class="pricing-card popular" id="pricing-pro">
+          <div class="pricing-header">
+            <h3>Pro</h3>
+            <p class="pricing-desc">The default scaling option for growing enterprise applications.</p>
+            <div class="pricing-price">
+              <span class="price-symbol" id="pro-symbol">$</span>
+              <span class="price-value" id="pro-value">49</span>
+              <span class="price-period" id="pro-period">/ mo</span>
+            </div>
+            <div class="price-subtext" id="pro-subtext"></div>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>50,000 data rows/mo</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>Advanced anomaly detection</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>Priority API access</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>1h support response</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>Custom data connectors</span>
+            </li>
+          </ul>
+          <button class="btn btn-primary" id="pro-cta">Choose Pro</button>
+        </div>
+
+        <!-- Tier 3: Enterprise -->
+        <div class="pricing-card" id="pricing-enterprise">
+          <div class="pricing-header">
+            <h3>Enterprise</h3>
+            <p class="pricing-desc">Uncapped pipelines with strict SLAs for global deployments.</p>
+            <div class="pricing-price">
+              <span class="price-symbol" id="enterprise-symbol">$</span>
+              <span class="price-value" id="enterprise-value">149</span>
+              <span class="price-period" id="enterprise-period">/ mo</span>
+            </div>
+            <div class="price-subtext" id="enterprise-subtext"></div>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>Unlimited data rows</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>Real-time pipeline monitoring</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>Dedicated support engineer</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+              </svg>
+              <span>Custom AI agent training</span>
+            </li>
+          </ul>
+          <button class="btn btn-secondary" id="enterprise-cta">Choose Enterprise</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof" id="testimonials">
+      <div class="social-container">
+        <h3 class="social-title">Trusted by industry leaders</h3>
+        <div class="logos-grid">
+          <!-- Logo Item 1: Link icon + Text -->
+          <div class="logo-item">
+            <!-- link-solid.svg -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.232 4.232a2.5 2.5 0 013.536 0l3.536 3.536a2.5 2.5 0 010 3.536L17.23 13.38a.75.75 0 01-1.06-1.06l2.072-2.072a1 1 0 000-1.414l-3.536-3.536a1 1 0 00-1.414 0L11.22 7.37a.75.75 0 11-1.06-1.06l2.072-2.078zM12.78 16.63a.75.75 0 11-1.06 1.06l-2.072 2.072a2.5 2.5 0 01-3.536 0L2.575 16.23a2.5 2.5 0 010-3.536l2.072-2.072a.75.75 0 011.06 1.06L3.636 13.75a1 1 0 000 1.414l3.536 3.536a1 1 0 001.414 0l2.072-2.072a.75.75 0 011.06 0z" />
+              <path d="M9.06 14.94a.75.75 0 010-1.06l5.88-5.88a.75.75 0 011.06 1.06l-5.88 5.88a.75.75 0 01-1.06 0z" />
+            </svg>
+            <span>OmniChain</span>
+          </div>
+          <!-- Logo Item 2 -->
+          <div class="logo-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+            </svg>
+            <span>ScaleUp</span>
+          </div>
+          <!-- Logo Item 3 -->
+          <div class="logo-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l9-5.25v-9zM11.25 22.18v-9l-9-5.25v9l9 5.25z" />
+            </svg>
+            <span>KubeVault</span>
+          </div>
+          <!-- Logo Item 4 -->
+          <div class="logo-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.43l-1.003.828c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.43l1.004-.827c.292-.24.437-.613.43-.991a6.936 6.936 0 010-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span>CoreLogic</span>
+          </div>
+        </div>
+
+        <div class="testimonial-wrapper">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Before adopting AetherFlow, parsing our semi-structured transactional feeds into our warehouse took days. Now, we just set the endpoints and the mapping handles itself in real-time. The speed and isolated memory model is absolutely unmatched."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MS</div>
+              <span class="author-name">Marcus Sterling</span>
+              <span class="author-title">Head of Infrastructure, OmniChain</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+          </svg>
+          <span>AetherFlow</span>
+        </a>
+        <p>Providing high-performance computational data fabrics for next-gen artificial intelligence platforms globally.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">System Status</a></li>
+          <li><a href="#">Developer API</a></li>
+          <li><a href="#">Integration Hub</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Contact Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 AetherFlow Inc. All rights reserved.</span>
+      <span class="font-mono" style="font-size: 0.75rem;">Build version: 2.0.4-LTS</span>
+    </div>
+  </footer>
+
+  <!-- Web Logic Script -->
+  <script src="app.js"></script>
+</body>
+</html>
