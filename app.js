@@ -7,9 +7,9 @@
 // --- PERFORMANCE-ISOLATED PRICING MATRIX CONFIGURATION ---
 const PRICING_MATRIX = {
   currencies: {
-    USD: { symbol: '$', rate: 1.0, subtextFormat: 'Billed annually ({symbol}{val}/yr)' },
-    EUR: { symbol: '€', rate: 0.92, subtextFormat: 'Billed annually ({symbol}{val}/yr)' },
-    INR: { symbol: '₹', rate: 83.5, subtextFormat: 'Billed annually ({symbol}{val}/yr)' }
+    USD: { symbol: '$', rate: 1.0, regionalTariffMultiplier: 1.00, subtextFormat: 'Billed annually ({symbol}{val}/yr)' },
+    EUR: { symbol: '€', rate: 0.92, regionalTariffMultiplier: 1.05, subtextFormat: 'Billed annually ({symbol}{val}/yr)' },
+    INR: { symbol: '₹', rate: 83.5, regionalTariffMultiplier: 0.85, subtextFormat: 'Billed annually ({symbol}{val}/yr)' }
   },
   tiers: {
     starter: { baseUSD: 19 },
@@ -56,11 +56,12 @@ function updatePricingDisplay() {
   const currInfo = PRICING_MATRIX.currencies[currentCurrency];
   const symbol = currInfo.symbol;
   const rate = currInfo.rate;
+  const tariff = currInfo.regionalTariffMultiplier;
   const discount = PRICING_MATRIX.discount;
 
   for (const [tierId, tierData] of Object.entries(PRICING_MATRIX.tiers)) {
     const baseUSD = tierData.baseUSD;
-    let finalMonthlyPrice = baseUSD * rate;
+    let finalMonthlyPrice = baseUSD * rate * tariff;
     let subtextVal = '';
 
     if (currentBilling === 'yearly') {
